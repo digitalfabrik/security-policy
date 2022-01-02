@@ -8,7 +8,13 @@ Services can be identified by the following means:
 - The reverse DNS of an IP address resolves to one of the following
   domains: example.com
 
-2. Classification of Vulnerabilities
+2. Acceptable Use
+
+We generally invite security researchers to search for vulnerabilities
+in our services. We kindly ask to not put any actual user data or
+production systems at risk.
+
+3. Classification of Vulnerabilities
 
 We consider vulnerabilities as relevant when they meet one or more of
 the following conditions:
@@ -29,7 +35,7 @@ the following information:
 - Security vulnerablities that can only be used within the scope of the
   used account.
 
-3. Reporting Vulnerabilities
+4. Reporting Vulnerabilities
 
 Report vulnerabilities via e-mail to security@example.com. For
 encryption the PGP key https://example.com/pubkey.asc can be used.
@@ -42,20 +48,20 @@ Please make sure that you include the following information:
 Reports will be answered within 48 hours. If you have not received an
 answer within that time frame, please make sure to contact us again.
 
-4. Bug Bounties / Vulnerability Rewards
+5. Bug Bounties / Vulnerability Rewards
 
 The amount of reward payed depends on the severity of the found
 vulnerability. We usually do not pay rewards if vulnerabilities can be
 found in mass scans with of-the-shelf software.
 
-5. Acknowledgement
+6. Acknowledgement
 
 We list recognized reports of vulnerablities online if the reporting
 security researcher agrees. The name, contact e-mail address, and type of
 vulnerability can be included in the list. Our public acknowledgements
 can be found at https://example.com/security-acknowledgements.html.
 
-6. About this Policy
+7. About this Policy
 
 This policy is MIT licensed. Feel free to suggest modifications and
 additions at https://github.com/digitalfabrik/security-policy.
