@@ -22,7 +22,7 @@ reports one of the following problems:
   information that either reveals further security relevant problems or
   contains user data, credentials, or sensitive data in general.
 - The vulnerability can be used to disrupt the orderly operation of a
-  service.
+  service (Denial of Service).
 - The vulnerability can be used to manipulate data within the service.
 - XSS, CSRF, RCE, authentication/authorization bypass, SQL inections,
   etc are considered relevant.
