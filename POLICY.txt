@@ -2,8 +2,8 @@ ORGNAME Security and Vulnerability Reporting Policy
 
 1. Services Covered by this Policy
 
-This policy covers all services directly operated by ORGNAME. Services
-operated can be identified by the following means:
+This policy covers all services directly operated by us (ORGNAME).
+Services can be identified by the following means:
 - The website has a .well-known/security.txt that links to this policy.
 - The reverse DNS of an IP address resolves to one of the following
   domains: example.com
@@ -39,6 +39,9 @@ Please make sure that you include the following information:
 - How can the bug be used/exploited
 - Explanation of the risk
 
+Reports will be answered within 48 hours. If you have not received an
+answer within that time frame, please make sure to contact us again.
+
 4. Bug Bounties / Vulnerability Rewards
 
 The amount of reward payed depends on the severity of the found
@@ -49,7 +52,8 @@ found in mass scans with of-the-shelf software.
 
 We list recognized reports of vulnerablities online if the reporting
 security researcher agrees. The name, contact e-mail address, and type of
-vulnerability can be included in the list.
+vulnerability can be included in the list. Our public acknowledgements
+can be found at https://example.com/security-acknowledgements.html.
 
 6. About this Policy
 
