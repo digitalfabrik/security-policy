@@ -18,16 +18,57 @@ the following conditions:
 - The vulnerability can be used to disrupt the orderly operation of a
   service.
 - The vulnerability can be used to manipulate data within the service.
-- XSS, CSRF, RCE, authentication/authorization bypass, SQL inections,
-  etc are considered relevant.
+- Injection vulnerabilities
+- Broken Authentication and Session Management
+- Cross Site Scripting (XSS)
+- Remote Code Execution
+- Insecure Direct Object Reference
+- Sensitive Data Exposure
+- Security Misconfiguration
+- Missing Function Level Access Control
+- Using Components with Known Vulnerabilities
+- Unvalidated Redirects and Forwards
+- Directory/Path transversal
+- Exposed credentials
+etc are considered relevant.
 
-We consider reports of vulnerabilities not as relevant when they contain
-the following information:
-- A service is missing HTTP security headers or comparable "add-on security"
-  features.
-- Publicly accessible version strings of used software.
-- Security vulnerablities that can only be used within the scope of the
-  used account.
+  
+Certain vulnerabilities are considered out-of-scope for this Security 
+and Vulnerability Reporting Policy. Those out-of-scope vulnerabilities
+include, but are not limited to:
+- Social Engineering attacks
+- Account enumeration using brute-force attacks
+- Weak password policies and password complexity requirements
+- Missing http security headers which do not lead to a vulnerability
+- Reports from automated tools or scans
+- Presence of autocomplete attribute on web forms
+- Missing cookie flags on non-sensitive cookies
+- Reports of SSL/TLS issues, best practices or insecure ciphers
+- Self-exploitation attacks
+- Test versions of applications
+- Mail configuration issues including SPF, DKIM, DMARC settings
+- Clickjacking on pages with no sensitive actions
+- Cross-Site Request Forgery (CSRF) on unauthenticated forms or
+  forms with no sensitive actions
+- Attacks requiring MITM or physical access to a user's device.
+- Previously known vulnerable libraries without 
+  a working Proof of Concept.
+- Comma Separated Values (CSV) injection without 
+  demonstrating a vulnerability.
+- Any activity that could lead to the disruption of our service (DoS).
+- Content spoofing and text injection issues without showing 
+  an attack vector/without being able to modify HTML/CSS
+- Rate limiting or bruteforce issues on non-authentication endpoints
+- Missing best practices in Content Security Policy.
+- Missing HttpOnly or Secure flags on cookies
+- Vulnerabilities only affecting users of outdated or unpatched browsers
+- Software version disclosure / Banner identification issues / 
+  Descriptive error messages or headers (e.g. stack traces, 
+  application or server errors).
+- Tabnabbing
+- Open redirect - unless an additional security impact can be demonstrated
+- Issues that require unlikely user interaction
+- Solutions affected by known CVEs published less than 30 days ago
 
 3. Reporting Vulnerabilities
 
