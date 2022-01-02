@@ -1,0 +1,57 @@
+ORGNAME Security and Vulnerability Reporting Policy
+
+1. Services Covered by this Policy
+
+This policy covers all services directly operated by ORGNAME. Services
+operated can be identified by the following means:
+- The website has a .well-known/security.txt that links to this policy.
+- The reverse DNS of an IP address resolves to one of the following
+  domains: example.com
+
+2. Classification of Vulnerabilities
+
+We consider vulnerabilities as relevant when they meet one or more of
+the following conditions:
+- The vulnerability can be used to directly access non-public
+  information that either reveals further security relevant problems or
+  contains user data.
+- The vulnerability can be used to disrupt the orderly operation of a
+  service.
+- The vulnerability can be used to manipulate data within the service.
+- XSS, CSRF, RCE, authentication/authorization bypass, SQL inections,
+  etc are considered relevant.
+
+We consider reports of vulnerabilities not as relevant when they contain
+the following information:
+- A service is missing HTTP security headers or comparable "add-on security"
+  features.
+- Publicly accessible version strings of used software.
+- Security vulnerablities that can only be used within the scope of the
+  used account.
+
+3. Reporting Vulnerabilities
+
+Report vulnerabilities via e-mail to security@example.com. For
+encryption the PGP key https://example.com/pubkey.asc can be used.
+
+Please make sure that you include the following information:
+- Which service is affected
+- How can the bug be used/exploited
+- Explanation of the risk
+
+4. Bug Bounties / Vulnerability Rewards
+
+The amount of reward payed depends on the severity of the found
+vulnerability. We usually do not pay rewards if vulnerabilities can be
+found in mass scans with of-the-shelf software.
+
+5. Acknowledgement
+
+We list recognized reports of vulnerablities online if the reporting
+security researcher agrees. The name, contact e-mail address, and type of
+vulnerability can be included in the list.
+
+6. About this Policy
+
+This policy is MIT licensed. Feel free to suggest modifications and
+additions at https://github.com/digitalfabrik/security-policy.
