@@ -15,25 +15,25 @@ in our services. We kindly ask to not put any actual user data or
 production systems at risk.
 
 3. Classification of Vulnerabilities
-
 We will consider a vulnerability report most likely as relevant if it
 reports one of the following problems:
-- The vulnerability can be used to directly access non-public
-  information that either reveals further security relevant problems or
-  contains user data, credentials, or sensitive data in general.
-- The vulnerability can be used to disrupt the orderly operation of a
-  service (Denial of Service).
-- The vulnerability can be used to manipulate data within the service.
-- XSS, CSRF, RCE, authentication/authorization bypass, SQL inections,
-  etc are considered relevant.
-
+    1. The vulnerability can be used to directly access non-public
+       information that either reveals further security relevant problems or
+       contains user data, credentials, or sensitive data in general.
+    2. The vulnerability can be used to disrupt the orderly operation of a
+       service (Denial of Service).
+    3. The vulnerability can be used to manipulate data within the service.
+    4. XSS, CSRF, RCE, authentication/authorization bypass, SQL inections,
+       etc are considered relevant.
 We will consider a vulnerability report most likely as NOT relevant if
 it reports one of the following problems:
-- Missing security features, for example HTTP headers, if they are not
-  actually preventing a vulnerability.
-- Publicly accessible version strings of used software.
-- Security vulnerablities that can only be used within the scope of the
-  used account.
+    5. Missing security features, for example HTTP headers, if they are not
+       actually preventing a vulnerability.
+    6. Publicly accessible version strings of used software.
+    7. Security vulnerablities that can only be used within the scope of the
+       used account.
+    8. Publicly available information even when retrieved over usually non-
+       public channels (i.e. APIs).
 
 4. Reporting Vulnerabilities
 
