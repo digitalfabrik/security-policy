@@ -26,6 +26,9 @@ reports one of the following problems:
 - The vulnerability can be used to manipulate data within the service.
 - XSS, CSRF, RCE, authentication/authorization bypass, SQL inections,
   etc are considered relevant.
+- Known vulnerabilities with a CVSS score greater than 7 that have not
+  yet been patched by the vendor and should therefore be mitigated by
+  other means until the patch is released and installed.
 
 We will consider a vulnerability report most likely as NOT relevant if
 it reports one of the following problems:
@@ -34,6 +37,8 @@ it reports one of the following problems:
 - Publicly accessible version strings of used software.
 - Security vulnerablities that can only be used within the scope of the
   used account.
+- The vulnerability exists in a third party software and is already
+  known.
 
 4. Reporting Vulnerabilities
 
@@ -44,13 +49,19 @@ Please make sure that you include the following information:
 - Which service is affected
 - How can the bug be used/exploited
 - Explanation of the risk
+- If possible, include a estimated CVSS score
 
 Reports will be answered within 48 hours. If you have not received an
-answer within that time frame, feel free to contact us again.
+answer within that time frame, feel free to contact us again. Please do
+not ask for updates on a ticket repeatedly as it may take time to
+resolve the issue.
 
 For used open source software, we recommend to file bug reports and/or
 pull requests against the upstream repositories. This includes hardening
 instructions in the installation documentation.
+
+If you are reporting a known vulnerability, please include a reference
+to the original vulnerability report.
 
 5. Bug Bounties / Vulnerability Rewards
 
