@@ -15,6 +15,7 @@ in our services. We kindly ask to not put any actual user data or
 production systems at risk.
 
 3. Classification of Vulnerabilities
+
 We will consider a vulnerability report most likely as relevant if it
 reports one of the following problems:
     1. The vulnerability can be used to directly access non-public
@@ -25,15 +26,21 @@ reports one of the following problems:
     3. The vulnerability can be used to manipulate data within the service.
     4. XSS, CSRF, RCE, authentication/authorization bypass, SQL inections,
        etc are considered relevant.
+    5. Known vulnerabilities with a CVSS score greater than 7 that have not
+       yet been patched by the vendor and should therefore be mitigated by
+       other means until the patch is released and installed.
+
 We will consider a vulnerability report most likely as NOT relevant if
 it reports one of the following problems:
-    5. Missing security features, for example HTTP headers, if they are not
+    6. Missing security features, for example HTTP headers, if they are not
        actually preventing a vulnerability.
-    6. Publicly accessible version strings of used software.
-    7. Security vulnerablities that can only be used within the scope of the
+    7. Publicly accessible version strings of used software.
+    8. Security vulnerablities that can only be used within the scope of the
        used account.
-    8. Publicly available information even when retrieved over usually non-
+    9. Publicly available information even when retrieved over usually non-
        public channels (i.e. APIs).
+   10. The vulnerability exists in a third party software and is and was
+       not deemed worthy of fixing by the upstream project.
 
 4. Reporting Vulnerabilities
 
@@ -44,13 +51,19 @@ Please make sure that you include the following information:
 - Which service is affected
 - How can the bug be used/exploited
 - Explanation of the risk
+- If possible, include a estimated CVSS score
 
 Reports will be answered within 48 hours. If you have not received an
-answer within that time frame, feel free to contact us again.
+answer within that time frame, feel free to contact us again. Please do
+not ask for updates on a ticket repeatedly as it may take time to
+resolve the issue.
 
 For used open source software, we recommend to file bug reports and/or
 pull requests against the upstream repositories. This includes hardening
 instructions in the installation documentation.
+
+If you are reporting a known vulnerability, please include a reference
+to the original vulnerability report and/or CVE number.
 
 5. Bug Bounties / Vulnerability Rewards
 
@@ -58,7 +71,8 @@ The amount of the reward payed depends on the severity of the found
 vulnerability. We usually do not pay rewards if vulnerabilities can be
 found in mass scans with of-the-shelf software.
 
-Only responsible disclosures are eligible for rewards.
+Only responsible disclosures adhering to this policy are eligible for
+rewards.
 
 6. Acknowledgement
 
