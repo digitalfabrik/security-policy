@@ -39,8 +39,8 @@ it reports one of the following problems:
        used account.
     9. Publicly available information even when retrieved over usually non-
        public channels (i.e. APIs).
-   10. The vulnerability exists in a third party software and is and was
-       not deemed worthy of fixing by the upstream project.
+   10. The vulnerability exists in a third party software and is not deemed
+       worthy of fixing by the upstream project.
 
 4. Reporting Vulnerabilities
 
