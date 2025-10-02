@@ -65,6 +65,9 @@ instructions in the installation documentation.
 If you are reporting a known vulnerability, please include a reference
 to the original vulnerability report and/or CVE number.
 
+We will not answer general inquiries about the existence of bug bounty
+programs.
+
 5. Bug Bounties / Vulnerability Rewards
 
 The amount of the reward payed depends on the severity of the found
